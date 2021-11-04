@@ -12,6 +12,14 @@ body {
   font-size: 16px;
 }
 
+.header {
+  height: 100vh;
+  min-height: 805px;
+  background: linear-gradient(to top right, #fed4cd, rgba(254, 212, 205, 0));
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
 .container {
   box-sizing: border-box;
   max-width: 1440px;
@@ -33,6 +41,7 @@ body {
   grid-template-columns: 234px auto 177px;
   font-family: Inter, serif;
   font-weight: 400;
+  margin-bottom: 133px;
 }
 
 .hamburger-wrapper {
@@ -158,7 +167,50 @@ body {
 }
 
 .start-btn__text {
-  color: #ff6744;
+  color: hsl(11, 100%, 63%);
+}
+
+.header-info {
+  display: grid;
+  grid-template-columns: 35% auto 50%;
+}
+
+.header-info__title {
+  font-family: Inter, serif;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.header-info__description {
+  font-weight: 400;
+  font-size: 14px;
+  color: #7a7a7a;
+}
+
+.header-info_right {
+  position: relative;
+  grid-column-start: 3;
+}
+
+.header-info__bg1,
+.header-info__bg2 {
+  // z-index: -1;
+  position: absolute;
+}
+
+.header-info__bg1 {
+  top: -80px;
+  right: 40px;
+}
+
+.header-info__bg2 {
+  bottom: -70px;
+  left: -15px;
+}
+
+.header-info__photo {
+  z-index: 1;
+  position: absolute;
 }
 
 @import 'media';
