@@ -194,13 +194,12 @@ body {
 
 .header-info__bg1,
 .header-info__bg2 {
-  // z-index: -1;
   position: absolute;
 }
 
 .header-info__bg1 {
   top: -80px;
-  right: 40px;
+  left: 300px;
 }
 
 .header-info__bg2 {
@@ -211,6 +210,8 @@ body {
 .header-info__photo {
   z-index: 1;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @import 'media';
