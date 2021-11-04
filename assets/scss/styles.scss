@@ -6,6 +6,20 @@ a {
   color: #000;
 }
 
+button {
+  outline: none;
+  border: none;
+}
+
+input {
+  outline: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
 body {
   font-family: 'Avenir', serif;
   font-weight: 700;
@@ -13,8 +27,9 @@ body {
 }
 
 .header {
+  position: relative;
   height: 100vh;
-  min-height: 805px;
+  min-height: 860px;
   background: linear-gradient(to top right, #fed4cd, rgba(254, 212, 205, 0));
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 70px;
@@ -212,6 +227,44 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.callback {
+  font-family: Inter, serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.callback-form {
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  transform: translate(-342px);
+}
+
+.email {
+  box-sizing: border-box;
+  width: 684px;
+  height: 80px;
+  padding: 30px 40px;
+  border-radius: 56px;
+  border: 1px solid #ff6744;
+
+  &::placeholder {
+    color: #7a7a7a;
+  }
+}
+
+.submit {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 46px;
+  background-color: #ff6744;
+  color: #fff;
 }
 
 @import 'media';
