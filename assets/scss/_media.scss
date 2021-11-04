@@ -60,3 +60,45 @@
     display: none;
   }
 }
+
+@media (max-width: 596px) {
+  .top-line {
+    position: relative;
+    grid-template-columns: 60px auto 100px;
+  }
+
+  .logo-wrapper {
+    padding-top: 15px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .start-btn__rectangle {
+    width: 100px;
+  }
+
+  .start-btn__text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 596px) {
+  .top-line {
+    position: relative;
+    grid-template-columns: 60px auto;
+  }
+
+  .logo-wrapper {
+    width: 100%;
+  }
+
+  .logo {
+    margin-left: auto;
+  }
+
+  .start-btn {
+    display: none;
+  }
+}
