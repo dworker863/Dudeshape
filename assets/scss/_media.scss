@@ -145,6 +145,21 @@
     left: 50%;
     transform: translate(-250px);
   }
+
+  .callback-form {
+    left: 50%;
+    bottom: -40px;
+    transform: translate(-200px);
+  }
+
+  .email {
+    width: 400px;
+    padding: 10px 20px;
+  }
+
+  .submit {
+    width: 120px;
+  }
 }
 
 @media (max-width: 596px) {
@@ -200,11 +215,24 @@
   .start-btn {
     display: none;
   }
-}
 
-@media (max-width: 526px) {
   .header-info__photo {
     max-width: 320px;
     transform: translate(-160px);
+  }
+
+  .callback-form {
+    left: 50%;
+    bottom: -40px;
+    transform: translate(-150px);
+  }
+
+  .email {
+    width: 300px;
+  }
+
+  .submit {
+    right: 10px;
+    width: 120px;
   }
 }
