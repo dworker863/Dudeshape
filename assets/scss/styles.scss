@@ -1,7 +1,77 @@
 @import 'fonts';
 @import '../libs/sanitize';
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 body {
   font-family: 'Avenir', serif;
   font-weight: 700;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 1440px;
+  padding: 38px 80px 33px 80px;
+}
+
+.logo {
+  display: block;
+  width: 234px;
+  height: 80px;
+  background-image: url(../images/logo.png);
+}
+
+.top-line {
+  display: grid;
+  grid-template-columns: 234px 1fr 177px;
+  font-family: Inter, serif;
+  font-weight: 400;
+}
+
+.menu {
+  margin-left: 170px;
+  padding-top: 10px;
+}
+
+.menu-item {
+  display: inline-block;
+  margin-left: 110px;
+}
+
+.start-btn {
+  padding-top: 12px;
+  text-align: center;
+  line-height: 44px;
+  cursor: pointer;
+
+  &:hover {
+    .start-btn__rectangle:nth-child(2) {
+      background-color: #ff6744;
+    }
+
+    .start-btn__text {
+      color: #fff;
+    }
+  }
+}
+
+.start-btn__rectangle {
+  z-index: -1;
+  position: absolute;
+  width: 177px;
+  height: 44px;
+  border: 1px solid #fed4cd;
+  border-radius: 50px;
+  background-color: #fffbfa;
+}
+
+.start-btn__rectangle:nth-child(2) {
+  transform: rotate(-14.49deg);
+}
+
+.start-btn__text {
+  color: #ff6744;
 }
