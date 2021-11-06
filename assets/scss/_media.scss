@@ -115,6 +115,16 @@
     left: 50%;
     transform: translate(-316px);
   }
+
+  .benefits__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .benefits__item {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -195,6 +205,16 @@
     max-width: 400px;
     top: 50px;
     transform: translate(-200px);
+  }
+
+  .benefits__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-top: 100px;
+  }
+
+  .benefits__item {
+    margin-bottom: 80px;
   }
 }
 
