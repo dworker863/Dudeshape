@@ -267,4 +267,45 @@ body {
   color: #fff;
 }
 
+.benefits {
+  font-family: Inter, serif;
+  font-weight: 400;
+}
+
+.benefits__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 190px;
+  padding-bottom: 150px;
+}
+
+.benefits__icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  background-color: #e1f3f4;
+}
+
+.benefits__icon .icon {
+  position: absolute;
+  top: 25px;
+  left: 40px;
+}
+
+.benefits__title {
+  margin-bottom: 11px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.benefits__desc {
+  font-size: 14px;
+  color: #7a7a7a;
+  line-height: 22px;
+}
+
 @import 'media';
