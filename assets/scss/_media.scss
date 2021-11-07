@@ -116,7 +116,7 @@
     transform: translate(-316px);
   }
 
-  .benefits__wrapper {
+  .benefits {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -207,7 +207,7 @@
     transform: translate(-200px);
   }
 
-  .benefits__wrapper {
+  .benefits {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding-top: 100px;
@@ -215,6 +215,18 @@
 
   .benefits__item {
     margin-bottom: 80px;
+  }
+
+  .benefits__icon {
+    margin-left: 20px;
+  }
+
+  .benefits__title {
+    text-align: center;
+  }
+
+  .benefits__desc {
+    text-align: center;
   }
 }
 
