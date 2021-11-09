@@ -311,6 +311,8 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 60% 40%;
+  padding-top: 50px;
+  padding-bottom: 50px;
   font-family: Avenir, serif;
   font-weight: 400;
 }
@@ -354,4 +356,94 @@ body {
   color: #5fafef;
 }
 
+.prices {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.prices-title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.prices-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 45px;
+}
+
+.prices__item {
+  width: 255px;
+  font-family: Avenir, serif;
+  font-weight: 500;
+  color: #848199;
+}
+
+.price {
+  font-size: 17px;
+  margin-bottom: 28px;
+}
+
+.price-amount {
+  margin-right: 11px;
+  font-size: 36px;
+  font-weight: 900;
+  color: #231d4f;
+}
+
+.prices__title {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 900;
+  color: #231d4f;
+}
+
+.prices__desc {
+  margin-bottom: 15px;
+}
+
+.prices__services-item {
+  padding-bottom: 10px;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.services-item__checkbox {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: rgba(82, 67, 194, 0.1037);
+  vertical-align: middle;
+
+  &.active {
+    background-image: url('../images/checked.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.btn_inverse {
+  background-color: rgba(244, 150, 209, 0.1);
+  color: #ff6744;
+}
+
+.prices__btn {
+  margin-top: 26px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 24px;
+  font-family: Avenir, serif;
+  font-size: 15px;
+  font-weight: 900;
+}
 @import 'media';

@@ -144,6 +144,37 @@
 @font-face {
   font-family: 'Avenir';
   font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/avenir-next-lt-pro-regular_O2lI4/Avenir Next LT Pro Regular.otf'); /* IE9 Compat Modes */
+  font-weight: 500;
+  src: url('../fonts/Metropolis/Metropolis-Regular.otf'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/Metropolis/Metropolis-Regular.otf') format('opentype'),
+    url('../fonts/Metropolis/Metropolis-Regular.?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/Metropolis/Metropolis-Regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */
+      url('../fonts/Metropolis/Metropolis-Regular.woff') format('woff'),
+    /* Modern Browsers */ url('../fonts/Metropolis/Metropolis-Regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('../fonts/Metropolis/Metropolis-Regular.svg#Inter') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/Metropolis/Metropolis-Bold.otf'); /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/Metropolis/Metropolis-Bold.otf') format('opentype'),
+    url('../fonts/Metropolis/Metropolis-Bold.?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/Metropolis/Metropolis-Bold.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/Metropolis/Metropolis-Bold.woff')
+      format('woff'),
+    /* Modern Browsers */ url('../fonts/Metropolis/Metropolis-Bold.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('../fonts/Metropolis/Metropolis-Bold.svg#Inter') format('svg'); /* Legacy iOS */
 }
