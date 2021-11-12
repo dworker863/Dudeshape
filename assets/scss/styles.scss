@@ -525,4 +525,71 @@ body {
   }
 }
 
+.reviews {
+  display: grid;
+  grid-template-columns: 38% auto 60%;
+}
+
+.reviews__review {
+  font-weight: 400;
+}
+
+.review__tag {
+  margin-bottom: 20px;
+  font-family: Roboto, serif;
+  font-size: 12px;
+}
+
+.review__title {
+  width: 330px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: Inter, serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.review__desc {
+  margin-bottom: 35px;
+  font-family: Avenir, serif;
+  font-size: 14px;
+  color: #7a7a7a;
+}
+
+.review__text {
+  margin-bottom: 35px;
+  font-size: 18px;
+  color: #5fafef;
+
+  &::before {
+    content: '”';
+    margin-right: 8px;
+    font-family: PlayFair Display, serif;
+    font-size: 72px;
+    color: #ff6744;
+    vertical-align: bottom;
+    line-height: 10px;
+  }
+}
+
+.review__author {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #7a7a7a;
+}
+
+.author__name {
+  color: #ff6744;
+}
+
+.review__arrows {
+  font-family: Inter, serif;
+  font-size: 12px;
+}
+
+.arrows__prev {
+  color: #7a7a7a;
+}
+
 @import 'media';
