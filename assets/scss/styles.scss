@@ -382,6 +382,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   height: 570px;
   padding: 45px;
+  margin-bottom: 100px;
   border: 1px solid #979797;
   border-radius: 26px;
 }
@@ -527,7 +528,7 @@ body {
 
 .reviews {
   display: grid;
-  grid-template-columns: 38% auto 60%;
+  grid-template-columns: 38% 118px auto;
 }
 
 .reviews__review {
@@ -590,6 +591,64 @@ body {
 
 .arrows__prev {
   color: #7a7a7a;
+}
+
+.reviews__photos {
+  position: relative;
+  grid-column-start: 3;
+}
+
+.photos__photo1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 270px;
+}
+
+.photos__photo2 {
+  position: absolute;
+  top: 155px;
+  left: 313px;
+  width: 245px;
+}
+
+.photos__photo3 {
+  position: absolute;
+  bottom: -40px;
+  left: 100px;
+  width: 220px;
+}
+
+.photos__circle_blue {
+  position: absolute;
+  top: 65px;
+  left: 340px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #5fafef;
+}
+
+.photos__circle_orange {
+  position: absolute;
+  top: 330px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background-color: #ff6744;
+}
+
+.photos__circle_grey {
+  position: absolute;
+  bottom: 30px;
+  left: 380px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  background-color: #1d3557;
 }
 
 @import 'media';
