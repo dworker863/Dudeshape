@@ -558,6 +558,28 @@ body {
   color: #7a7a7a;
 }
 
+.review__slider-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  width: 486px;
+  height: 160px;
+  margin-bottom: 35px;
+}
+
+.review__slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.review__item {
+  display: inline-block;
+  width: 486px;
+}
+
 .review__text {
   margin-bottom: 35px;
   font-size: 18px;
@@ -575,7 +597,7 @@ body {
 }
 
 .review__author {
-  margin-bottom: 20px;
+  margin-top: 0;
   font-size: 16px;
   color: #7a7a7a;
 }
@@ -589,7 +611,7 @@ body {
   font-size: 12px;
 }
 
-.arrows__prev {
+.arrow__disabled {
   color: #7a7a7a;
 }
 
