@@ -2,6 +2,31 @@ $(window).on('load', function () {
   const sliderWidth = $('.review__slider .review__item').length * 490 + 'px';
   let sliderLeft = +$('.review__slider').css('left').slice(0, -2);
 
+  const controller = new ScrollMagic.Controller({
+    globalSceneOptions: {
+      triggerHook: 'onCenter',
+    },
+  });
+
+  new ScrollMagic.Scene({
+    triggerElement: '.reviews',
+  })
+    .setClassToggle('.photos__circle_blue', 'active')
+    .addIndicators({ name: 'photos__circles' })
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: '.reviews',
+  })
+    .setClassToggle('.photos__circle_orange', 'active')
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: '.reviews',
+  })
+    .setClassToggle('.photos__circle_grey', 'active')
+    .addTo(controller);
+
   const getArrowDisable = () => {
     const width = $('.review__slider').width();
     sliderLeft = +$('.review__slider').css('left').slice(0, -2);

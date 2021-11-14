@@ -35,7 +35,12 @@ function styles() {
 
 function scripts() {
   return gulp
-    .src(['node_modules/jquery/dist/jquery.min.js', './assets/js/common.js'])
+    .src([
+      'node_modules/jquery/dist/jquery.min.js',
+      './assets/js/common.js',
+      'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
+      'node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
+    ])
     .pipe(sourcemaps.init())
     .pipe(concat('scripts.min.js'))
     .pipe(uglify())
