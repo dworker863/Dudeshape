@@ -110,5 +110,23 @@ $(window).on('load', function () {
   $('.carousel-partners').owlCarousel({
     items: 5,
     margin: 95,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      568: {
+        items: 2,
+      },
+      820: {
+        items: 3,
+      },
+      1200: {
+        items: 4,
+      },
+      1400: {
+        items: 5,
+      },
+    },
   });
 });

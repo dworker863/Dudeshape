@@ -833,8 +833,9 @@ body {
 }
 
 .partners-item__photo {
-  width: 180px;
+  width: 180px !important;
   height: 180px;
+  margin: 0 auto;
 }
 
 @import 'media';
