@@ -89,4 +89,10 @@ $(window).on('load', function () {
     getSliderTranslate(itemWidth, $(this));
     getArrowDisable();
   });
+
+  $('.owl-carousel').owlCarousel({
+    items: 3,
+    margin: 43,
+    loop: true,
+  });
 });

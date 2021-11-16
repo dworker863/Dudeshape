@@ -22,7 +22,10 @@ function html() {
 
 function styles() {
   return gulp
-    .src(['./assets/scss/**/*.scss'])
+    .src([
+      'assets/libs/owlCarousel/dist/assets/owl.carousel.min.css',
+      './assets/scss/**/*.scss',
+    ])
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(concat('styles.min.css'))
@@ -40,6 +43,7 @@ function scripts() {
       './assets/js/common.js',
       'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
       'node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',
+      'assets/libs/owlCarousel/dist/owl.carousel.min.js',
     ])
     .pipe(sourcemaps.init())
     .pipe(concat('scripts.min.js'))
