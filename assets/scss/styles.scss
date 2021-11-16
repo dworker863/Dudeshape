@@ -731,6 +731,10 @@ body {
   line-height: 29px;
 }
 
+.our-team {
+  margin-bottom: 150px;
+}
+
 .our-team__tag {
   margin-bottom: 20px;
   text-align: center;
@@ -781,9 +785,11 @@ body {
 
 .team-item__photo {
   width: 400px;
+  border-radius: 26px 26px 0 0;
 }
 
 .team-item__info {
+  margin-top: -2px;
   padding-top: 23px;
   padding-bottom: 23px;
   border-bottom-left-radius: 15px;
@@ -803,6 +809,32 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+}
+
+.partners {
+  font-family: Playfair Display, serif;
+  font-weight: 400;
+}
+
+.partners__title {
+  margin-bottom: 20px;
+  font-size: 42px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.partners__desc {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-family: Inter, serif;
+  color: #7a7a7a;
+  text-align: center;
+}
+
+.partners-item__photo {
+  width: 180px;
+  height: 180px;
 }
 
 @import 'media';

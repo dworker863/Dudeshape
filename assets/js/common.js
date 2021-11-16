@@ -90,7 +90,7 @@ $(window).on('load', function () {
     getArrowDisable();
   });
 
-  $('.owl-carousel').owlCarousel({
+  $('.carousel-team').owlCarousel({
     items: 3,
     margin: 43,
     loop: true,
@@ -105,5 +105,10 @@ $(window).on('load', function () {
         items: 3,
       },
     },
+  });
+
+  $('.carousel-partners').owlCarousel({
+    items: 5,
+    margin: 95,
   });
 });
