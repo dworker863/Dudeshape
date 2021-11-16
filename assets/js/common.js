@@ -94,5 +94,16 @@ $(window).on('load', function () {
     items: 3,
     margin: 43,
     loop: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      568: {
+        items: 2,
+      },
+      820: {
+        items: 3,
+      },
+    },
   });
 });
