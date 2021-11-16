@@ -697,7 +697,7 @@ body {
 
 .solutions {
   display: grid;
-  grid-template-columns: 1fr 110px 1fr;
+  grid-template-columns: 1fr 5% 1fr;
   padding: 100px 20px;
   font-weight: 400;
   border-radius: 26px;
@@ -706,6 +706,7 @@ body {
 
 .solutions__photo {
   grid-column-start: 3;
+
   img {
     width: 711px;
   }
