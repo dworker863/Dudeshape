@@ -1,5 +1,7 @@
 $(window).on('load', function () {
-  const sliderWidth = $('.review__slider .review__item').length * 490 + 'px';
+  const itemWidth = $('.review__item').width() + 4;
+  const sliderWidth =
+    $('.review__slider .review__item').length * itemWidth + 'px';
   let sliderLeft = +$('.review__slider').css('left').slice(0, -2);
 
   const controller = new ScrollMagic.Controller({
@@ -9,20 +11,20 @@ $(window).on('load', function () {
   });
 
   new ScrollMagic.Scene({
-    triggerElement: '.reviews',
+    triggerElement: '.reviews__photos',
   })
     .setClassToggle('.photos__circle_blue', 'active')
     .addIndicators({ name: 'photos__circles' })
     .addTo(controller);
 
   new ScrollMagic.Scene({
-    triggerElement: '.reviews',
+    triggerElement: '.reviews__photos',
   })
     .setClassToggle('.photos__circle_orange', 'active')
     .addTo(controller);
 
   new ScrollMagic.Scene({
-    triggerElement: '.reviews',
+    triggerElement: '.reviews__photos',
   })
     .setClassToggle('.photos__circle_grey', 'active')
     .addTo(controller);
@@ -31,13 +33,13 @@ $(window).on('load', function () {
     const width = $('.review__slider').width();
     sliderLeft = +$('.review__slider').css('left').slice(0, -2);
 
-    if (sliderLeft <= 0 && sliderLeft >= -490) {
+    if (sliderLeft <= 0 && sliderLeft >= -itemWidth) {
       $('.arrows__prev').addClass('arrow__disabled');
     } else {
       $('.arrows__prev').removeClass('arrow__disabled');
     }
 
-    if (width + sliderLeft <= 980) {
+    if (width + sliderLeft <= itemWidth * 2) {
       $('.arrows__next').addClass('arrow__disabled');
     } else {
       $('.arrows__next').removeClass('arrow__disabled');
@@ -78,13 +80,13 @@ $(window).on('load', function () {
 
   $('.arrows__next').on('click', function (e) {
     e.preventDefault();
-    getSliderTranslate(-490, $(this));
+    getSliderTranslate(-itemWidth, $(this));
     getArrowDisable();
   });
 
   $('.arrows__prev').on('click', function (e) {
     e.preventDefault();
-    getSliderTranslate(490, $(this));
+    getSliderTranslate(itemWidth, $(this));
     getArrowDisable();
   });
 });

@@ -94,6 +94,23 @@
     line-height: 32px;
     margin-bottom: 20px;
   }
+
+  .reviews {
+    grid-template-columns: 25% 500px;
+    grid-template-rows: 1fr 10% 1fr;
+  }
+
+  .reviews__photos {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+
+  .reviews__review {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
 }
 
 @media (max-width: 1038px) {
@@ -210,6 +227,58 @@
   .benefits__item {
     margin: 0 auto;
   }
+
+  .reviews {
+    grid-template-columns: 25% 500px;
+    grid-template-rows: 1fr 10% 1fr;
+  }
+
+  .photos__photo1 {
+    top: 0;
+    left: 0;
+    width: 220px;
+  }
+
+  .photos__photo2 {
+    top: 155px;
+    left: 250px;
+    width: 195px;
+  }
+
+  .photos__photo3 {
+    bottom: 40px;
+    left: 60px;
+    width: 170px;
+  }
+
+  .photos__circle_blue {
+    top: -40px;
+    left: 300px;
+
+    &.active {
+      top: 65px;
+      left: 280px;
+    }
+  }
+
+  .photos__circle_orange {
+    top: 260px;
+    left: -80px;
+
+    &.active {
+      left: 20px;
+    }
+  }
+
+  .photos__circle_grey {
+    bottom: -30px;
+    left: 300px;
+
+    &.active {
+      bottom: 80px;
+      left: 280px;
+    }
+  }
 }
 
 @media (max-width: 826px) {
@@ -229,6 +298,11 @@
     &:last-child {
       padding-top: 40px;
     }
+  }
+
+  .reviews {
+    grid-template-columns: 15% 500px;
+    grid-template-rows: 1fr 10% 1fr;
   }
 }
 
@@ -305,6 +379,11 @@
       padding-top: 40px;
     }
   }
+
+  .reviews {
+    grid-template-columns: 10% 500px;
+    grid-template-rows: 1fr 10% 1fr;
+  }
 }
 
 @media (max-width: 654px) {
@@ -339,6 +418,21 @@
 
   .about__desc {
     font-size: 14px;
+  }
+
+  .reviews {
+    grid-template-columns: 500px;
+    grid-template-rows: 1fr 10% 1fr;
+  }
+
+  .reviews__photos {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+
+  .reviews__review {
+    grid-row-start: 1;
+    grid-column-start: 1;
   }
 }
 
@@ -404,6 +498,19 @@
     padding-left: 40px;
     padding-right: 40px;
     transform: translate(-80px);
+  }
+
+  .reviews {
+    grid-template-columns: 320px;
+    grid-template-rows: 1fr 10% 1fr;
+  }
+
+  .review__slider-wrapper {
+    width: 320px;
+  }
+
+  .review__item {
+    width: 320px;
   }
 }
 
@@ -495,6 +602,41 @@
   .prices__desc {
     height: 48px;
     overflow: hidden;
+  }
+
+  .reviews {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+  }
+
+  .review__title {
+    width: 240px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .reviews__review {
+    width: 240px;
+    padding-top: 40px;
+  }
+
+  .review__slider-wrapper {
+    width: 240px;
+    height: 150px;
+  }
+
+  .review__item {
+    width: 240px;
+  }
+
+  .reviews__photos {
+    display: none;
+  }
+
+  .reviews__review {
+    grid-row-start: 1;
+    grid-column-start: 1;
   }
 }
 
