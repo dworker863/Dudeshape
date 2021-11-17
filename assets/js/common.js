@@ -129,4 +129,17 @@ $(window).on('load', function () {
       },
     },
   });
+
+  $('.carousel-blog').owlCarousel({
+    items: 1,
+    loop: true,
+  });
+
+  $('.blog-arrow__prev').on('click', function () {
+    $('.carousel-blog').trigger('prev.owl.carousel');
+  });
+
+  $('.blog-arrow__next').on('click', function () {
+    $('.carousel-blog').trigger('next.owl.carousel');
+  });
 });

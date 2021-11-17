@@ -871,6 +871,7 @@ body {
 
 .blog__arrows {
   position: relative;
+  margin-top: -30px;
 }
 
 .blog-arrow__prev,
@@ -903,7 +904,7 @@ body {
 
 .blog-arrow__next {
   top: 0;
-  left: 80px;
+  left: 100px;
 
   &::after {
     position: absolute;
