@@ -106,6 +106,10 @@ body {
   &:hover a {
     color: #ff6744;
   }
+
+  &.active a {
+    color: #ff6744;
+  }
 }
 
 .hamburger {
@@ -149,6 +153,14 @@ body {
 
 .menu__item {
   display: inline-block;
+
+  &:hover a {
+    color: #ff6744;
+  }
+
+  &.active a {
+    color: #ff6744;
+  }
 }
 
 .start-btn {
