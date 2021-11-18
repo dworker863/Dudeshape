@@ -6,28 +6,40 @@ $(window).on('load', function () {
 
   const controller = new ScrollMagic.Controller({
     globalSceneOptions: {
+      triggerHook: 'onLeave',
+    },
+  });
+
+  const controllerCirles = new ScrollMagic.Controller({
+    globalSceneOptions: {
       triggerHook: 'onCenter',
     },
   });
 
   new ScrollMagic.Scene({
+    triggerElement: '#about',
+  })
+    .setClassToggle('menu__item:nth-child(1)', 'active')
+    .addIndicators();
+
+  new ScrollMagic.Scene({
     triggerElement: '.reviews__photos',
   })
     .setClassToggle('.photos__circle_blue', 'active')
-    .addIndicators({ name: 'photos__circles' })
-    .addTo(controller);
+    // .addIndicators({ name: 'photos__circles' })
+    .addTo(controllerCirles);
 
   new ScrollMagic.Scene({
     triggerElement: '.reviews__photos',
   })
     .setClassToggle('.photos__circle_orange', 'active')
-    .addTo(controller);
+    .addTo(controllerCirles);
 
   new ScrollMagic.Scene({
     triggerElement: '.reviews__photos',
   })
     .setClassToggle('.photos__circle_grey', 'active')
-    .addTo(controller);
+    .addTo(controllerCirles);
 
   const getArrowDisable = () => {
     const width = $('.review__slider').width();

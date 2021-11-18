@@ -28,7 +28,6 @@ body {
 }
 
 .header {
-  position: relative;
   height: 100vh;
   min-height: 860px;
   background: linear-gradient(to top right, #fed4cd, rgba(254, 212, 205, 0));
@@ -37,6 +36,7 @@ body {
 }
 
 .container {
+  position: relative;
   box-sizing: border-box;
   max-width: 1440px;
   margin: 0 auto;
@@ -53,11 +53,18 @@ body {
 }
 
 .top-line {
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  width: 1280px;
+  margin-bottom: 133px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: 234px auto 177px;
   font-family: Inter, serif;
   font-weight: 400;
-  margin-bottom: 133px;
+  // background-color: magenta;
 }
 
 .hamburger-wrapper {
@@ -199,6 +206,7 @@ body {
 }
 
 .header-info {
+  margin-top: 213px;
   display: grid;
   grid-template-columns: 35% auto 50%;
 }
