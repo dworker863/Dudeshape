@@ -6,40 +6,60 @@ $(window).on('load', function () {
 
   const controller = new ScrollMagic.Controller({
     globalSceneOptions: {
-      triggerHook: 'onLeave',
-    },
-  });
-
-  const controllerCirles = new ScrollMagic.Controller({
-    globalSceneOptions: {
       triggerHook: 'onCenter',
     },
   });
 
   new ScrollMagic.Scene({
     triggerElement: '#about',
+    duration: $('#about').height(),
   })
-    .setClassToggle('menu__item:nth-child(1)', 'active')
-    .addIndicators();
+    .setClassToggle('.item1', 'active')
+    .addIndicators()
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: '#prices',
+    duration: $('#prices').height(),
+  })
+    .setClassToggle('.item2', 'active')
+    .addIndicators()
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: '#reviews',
+    duration: $('#reviews').height(),
+  })
+    .setClassToggle('.item3', 'active')
+    .addIndicators()
+    .addTo(controller);
+
+  new ScrollMagic.Scene({
+    triggerElement: '#blog',
+    duration: $('#blog').height(),
+  })
+    .setClassToggle('.item4', 'active')
+    .addIndicators()
+    .addTo(controller);
 
   new ScrollMagic.Scene({
     triggerElement: '.reviews__photos',
   })
     .setClassToggle('.photos__circle_blue', 'active')
     // .addIndicators({ name: 'photos__circles' })
-    .addTo(controllerCirles);
+    .addTo(controller);
 
   new ScrollMagic.Scene({
     triggerElement: '.reviews__photos',
   })
     .setClassToggle('.photos__circle_orange', 'active')
-    .addTo(controllerCirles);
+    .addTo(controller);
 
   new ScrollMagic.Scene({
     triggerElement: '.reviews__photos',
   })
     .setClassToggle('.photos__circle_grey', 'active')
-    .addTo(controllerCirles);
+    .addTo(controller);
 
   const getArrowDisable = () => {
     const width = $('.review__slider').width();
