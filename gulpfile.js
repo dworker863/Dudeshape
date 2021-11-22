@@ -70,7 +70,7 @@ function clear() {
 }
 
 function build(done) {
-  gulp.src('assets/css/styles.css').pipe(gulp.dest('dist/css'));
+  gulp.src('assets/css/styles.min.css').pipe(gulp.dest('dist/css'));
 
   gulp.src('assets/js/scripts.min.js').pipe(gulp.dest('dist/js'));
 

@@ -21,7 +21,6 @@ $(window).on('load', function () {
     duration: $('#about').height(),
   })
     .setClassToggle('.item1', 'active')
-    .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -29,7 +28,6 @@ $(window).on('load', function () {
     duration: $('#prices').height(),
   })
     .setClassToggle('.item2', 'active')
-    .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -37,7 +35,6 @@ $(window).on('load', function () {
     duration: $('#reviews').height(),
   })
     .setClassToggle('.item3', 'active')
-    .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
@@ -45,14 +42,12 @@ $(window).on('load', function () {
     duration: $('#blog').height(),
   })
     .setClassToggle('.item4', 'active')
-    .addIndicators()
     .addTo(controller);
 
   new ScrollMagic.Scene({
     triggerElement: '.reviews__photos',
   })
     .setClassToggle('.photos__circle_blue', 'active')
-    // .addIndicators({ name: 'photos__circles' })
     .addTo(controller);
 
   new ScrollMagic.Scene({

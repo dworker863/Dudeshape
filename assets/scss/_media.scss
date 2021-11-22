@@ -631,6 +631,7 @@
   .header {
     min-height: 900px;
   }
+
   .top-line {
     position: relative;
     grid-template-columns: 60px auto 100px;
@@ -740,6 +741,7 @@
 @media (max-width: 568px) {
   .prices__item {
     width: auto;
+
     &.active {
       width: auto;
       box-shadow: none;
@@ -824,6 +826,7 @@
 
   .prices__item {
     width: auto;
+
     &.active {
       width: auto;
       padding-left: 25px;
