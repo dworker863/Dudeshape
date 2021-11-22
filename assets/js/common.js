@@ -1,4 +1,10 @@
 $(window).on('load', function () {
+  $('.top-line').width($('.container').width());
+
+  $(window).on('resize', function (e) {
+    $('.top-line').width($('.container').width());
+  });
+
   const itemWidth = $('.review__item').width() + 4;
   const sliderWidth =
     $('.review__slider .review__item').length * itemWidth + 'px';
