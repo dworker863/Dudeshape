@@ -984,7 +984,12 @@ body {
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 143px;
+}
+
+.footer__block {
+  margin-right: 20px;
 }
 
 .block__title {
@@ -1007,6 +1012,8 @@ a.block__item {
 }
 
 .socials {
+  display: flex;
+  align-items: center;
   margin-top: 30px;
 }
 
@@ -1048,7 +1055,13 @@ a.block__item {
 
 .copyrights {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.date {
+  margin-right: 80px;
+  margin-bottom: 20px;
 }
 
 .copyrights_orange {
